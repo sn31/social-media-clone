@@ -6,7 +6,8 @@ function NavBar() {
         listItemStyles: {
             listStyleType: 'none',
             border: '1px solid #c4c8ce',
-            float: 'left'
+            float: 'left',
+            padding: '0.5em'
         },
         listStyles: {
             backgroundColor: '#c4c8ce',

@@ -1,8 +1,14 @@
 import React from "react";
 
 function SearchBar() {
+    const SearchBarStyles = {
+        float: 'right',
+        marginRight: '50px',
+        padding:'0.5em',
+        fontSize: '1em',
+    }
     return(
-        <div>
+        <div style={SearchBarStyles}>
             <form>
                 <input placeholder="Search">
                 </input>
