@@ -5,10 +5,7 @@ function Connection(props) {
     const ConnectionStyles = {
         box: {
             float: 'right',
-            marginRight: '70px',
-            marginTop: '1em',
-            border: '2px solid lightgray',
-            padding: '0.5em'
+            margin: '.5em',
         },
         images: {
             height: '80px',
