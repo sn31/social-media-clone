@@ -4,13 +4,13 @@ import Connection from "./Connection";
 function ConnectionList() {
     const ConnectionListStyles = {
         ul: {
-            listStyleType: 'none',
+            listStyleType: 'none'
         },
         container: {
             width: '18em',
             float: 'right',
-            border: '2px solid lightgray',
-            marginTop: '10px'
+            border: '2px solid gray',
+            marginTop: '10px',
         },
         text: {
             marginLeft: '4.4em'

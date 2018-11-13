@@ -7,8 +7,8 @@ function Content() {
     return(
         <div>
             <ConnectionList/>
-            {/* <Feed/>
-            <Profile/> */}
+            <Feed/>
+            {/* <Profile/> */}
         </div>
 
     );
