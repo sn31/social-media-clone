@@ -8,7 +8,7 @@ function Content() {
         <div>
             <ConnectionList/>
             <Feed/>
-            {/* <Profile/> */}
+            <Profile/>
         </div>
 
     );

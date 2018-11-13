@@ -1,8 +1,11 @@
 import React from "react";
-
+import Text from "./Text";
 function Profile() {
     return(
-        <p>Profile works</p>
+        <div>
+            <Text/>
+        </div>
+    
     );
 }
 
