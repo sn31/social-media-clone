@@ -1,8 +1,12 @@
 import React from "react";
-
+import NavBar from "./Navbar";
+import SearchBar from "./SearchBar";
 function Header() {
     return(
-        <h1>Help Queue</h1>
+        <div>
+            <NavBar/>
+            <SearchBar/>
+        </div>
     );
 }
 
