@@ -3,9 +3,7 @@ import React from "react";
 function Text() {
     const TextStyles = {
         border: '2px solid gray',
-        width:'20em',
         float: 'left',
-        marginLeft: '0.5em',
         padding: '1em'
     }
     return(
