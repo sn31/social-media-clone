@@ -11,12 +11,13 @@ function NavBar() {
         },
         listStyles: {
             backgroundColor: '#c4c8ce',
-            paddingRight: '100px'
+            paddingLeft: '0em',
+            fontSize: '1.2em'
         }
     };
 
     return (
-        <div>
+        <div style={{marginLeft: '0px'}}>
             <ul style={NavBarStyles.listStyles}>
                 <li style={NavBarStyles.listItemStyles}>Home</li>
                 <li style={NavBarStyles.listItemStyles}>Notifications</li>

@@ -4,14 +4,13 @@ import PropTypes from "prop-types";
 function Connection(props) {
     const ConnectionStyles = {
         box: {
-            float: 'right',
-            margin: '.5em',
+            float: 'left',
+            marginBottom: '.5em',
         },
         images: {
             height: '80px',
             float: 'left',
             marginRight: '0.5em'
-            
         },
         name: {
             float: 'right',

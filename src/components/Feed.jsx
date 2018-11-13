@@ -7,7 +7,6 @@ function Feed() {
         container: {
             width: '30em',
             float: 'right',
-            backgroundColor: '#ffbcbf',
             marginTop: '10px',
             marginRight: '0.5em',
             border: '2px solid gray'

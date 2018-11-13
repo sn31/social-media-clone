@@ -4,7 +4,7 @@ import Connection from "./Connection";
 function ConnectionList() {
     const ConnectionListStyles = {
         ul: {
-            listStyleType: 'none'
+            listStyleType: 'none',
         },
         container: {
             width: '18em',
@@ -13,7 +13,7 @@ function ConnectionList() {
             marginTop: '10px',
         },
         text: {
-            marginLeft: '4.4em'
+            marginLeft: '2.8em'
         }
     };
 
@@ -37,7 +37,7 @@ function ConnectionList() {
         <div style={ConnectionListStyles.container}>
         <h4 style={ConnectionListStyles.text}>Lorem ipsum</h4>
             <ul style={ConnectionListStyles.ul}>
-                <li>{connections}</li>
+                <li style={{ paddingLeft: '5px'}}>{connections}</li>
             </ul>
        
        </div>
