@@ -11,7 +11,7 @@ function SearchBar() {
         inputStyles: {
             fontSize: '1em',
             marginRight: '0.5em',
-            padding: '0.5em',
+            padding: '0.8em',
             borderRadius: '10px',
             border: '2px solid lightblue'
         }
