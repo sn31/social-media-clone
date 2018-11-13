@@ -2,17 +2,26 @@ import React from "react";
 
 function SearchBar() {
     const SearchBarStyles = {
+       form: {
         float: 'right',
         marginRight: '50px',
-        padding:'0.5em',
-        fontSize: '1em',
+       
+        },
+
+        inputStyles: {
+            fontSize: '1em',
+            marginRight: '0.5em',
+            padding: '0.5em',
+            borderRadius: '10px',
+            border: '2px solid lightblue'
+        }
     }
     return(
-        <div style={SearchBarStyles}>
+        <div style={SearchBarStyles.form}>
             <form>
-                <input placeholder="Search">
+                <input style={SearchBarStyles.inputStyles} placeholder="Search">
                 </input>
-                <button>Tweet</button>
+                <button style={SearchBarStyles.inputStyles}>Tweet</button>
             </form>
         </div>
     );
