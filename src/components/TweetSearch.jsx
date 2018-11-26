@@ -19,14 +19,17 @@ function TweetSearch() {
 
     let toggle = function () {
         if ($('#newTweet').attr('class', 'hide')) {
-            $('#newTweet').removeClass('hide');
-            $('#newTweetBtn').removeClass('hide');
-            $('#writeBtn').addClass('hide');
+            $('#newTweet').show();
+            $('#newTweetBtn').show();
+            $('#writeBtn').hide();
         }
     };
 
     let handleSubmit = function (event) {
         event.preventDefault();
+        $('#newTweet').hide();
+        $('#newTweetBtn').hide();
+        $('#writeBtn').show();
     }
 
     return (
