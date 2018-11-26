@@ -34,8 +34,15 @@ module.exports = {
         exclude: /node_modules/,
         options: {
           presets: [["es2015",{"modules": false}], "react",]
-          ,plugins: ["react-hot-loader/babel"]
+          ,plugins: ["react-hot-loader/babel", 'styled-jsx/babel']
         }
+      },
+      {
+        test: /\.png$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name]-[hash:8].[ext]'
+        },
       }
     ]
   },

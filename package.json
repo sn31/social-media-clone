@@ -5,15 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "lint": "eslint src/** src/**/**; exit 0",
+    "lint-fix": "eslint src/** src/**/** --fix; exit 0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^5.9.0",
+    "eslint-loader": "^2.1.1",
+    "file-loader": "^2.0.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "start": "^5.1.0"
+    "start": "^5.1.0",
+    "styled-jsx": "^3.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
