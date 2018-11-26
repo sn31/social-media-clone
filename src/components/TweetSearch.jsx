@@ -1,7 +1,8 @@
 import React from "react";
 import $ from '../../node_modules/jquery/dist/jquery';
+import PropTypes from 'prop-types';
 
-function TweetSearch() {
+function TweetSearch(props) {
     const TweetSearchStyles = {
         form: {
             backgroundColor: '#B0E0E6',
@@ -30,7 +31,11 @@ function TweetSearch() {
         $('#newTweet').hide();
         $('#newTweetBtn').hide();
         $('#writeBtn').show();
+        console.log(_tweet.value);
+        props.addNewTweetCallback(_tweet.value);
+        _tweet.value ='';
     }
+    let _tweet = null;
 
     return (
         <table style={TweetSearchStyles.form}>
@@ -49,7 +54,8 @@ function TweetSearch() {
                 </td>
                 <td>
                     <form onSubmit={handleSubmit}>
-                        <input id="newTweet" style={TweetSearchStyles.inputStyles} className="hide" placeholder="What's happening?">
+                        <input id="newTweet" style={TweetSearchStyles.inputStyles} className="hide" placeholder="What's happening?"
+                        ref={(input)=>{_tweet=input;}}>
                         </input>
                         <button id="newTweetBtn" type="submit" className="hide">Tweet</button>
                     </form>
@@ -58,6 +64,10 @@ function TweetSearch() {
 
         </table>
     );
+}
+
+TweetSearch.propTypes = {
+    addNewTweetCallback: PropTypes.func,
 }
 
 export default TweetSearch;
