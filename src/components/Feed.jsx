@@ -4,10 +4,10 @@ import TweetSearch from './TweetSearch';
 
 const FeedStyles = {
     container: {
-        width: '30em',
-        float: 'right',
+        width: '60%',        
         marginTop: '10px',
         marginRight: '0.5em',
+        marginLeft:'0.5em',
         border: '2px solid gray'
     },
     ul :{

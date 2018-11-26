@@ -7,8 +7,8 @@ function ConnectionList() {
             listStyleType: 'none',
         },
         container: {
-            width: '18em',
-            float: 'right',
+            width: '20%',
+            minWidth: '260px',
             border: '2px solid gray',
             marginTop: '10px',
         },

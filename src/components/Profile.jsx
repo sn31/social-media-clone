@@ -5,7 +5,8 @@ import ProfileHeader from "./ProfileHeader";
 function Profile() {
     const ProfileStyles = {
         container: {
-            width: '21.8em',
+            width: '20%',
+            minWidth: '350px',
             paddingTop: '10px',
             height: '30em'
         }

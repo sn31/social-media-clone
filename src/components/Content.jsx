@@ -4,11 +4,17 @@ import Feed from "./Feed";
 import Profile from "./Profile";
 
 function Content() {
-    return(
-        <div>
-            <ConnectionList/>
-            <Feed/>
+    const contentStyle = {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'flex-start',
+    };
+    return (
+        <div style={contentStyle}>
             <Profile/>
+            <Feed/>
+            <ConnectionList/>
         </div>
 
     );

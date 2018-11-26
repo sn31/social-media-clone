@@ -2,9 +2,10 @@ import React from "react";
 
 function Text() {
     const TextStyles = {
-        border: '2px solid gray',
+        border: '2px solid grey',
         float: 'left',
-        padding: '1em'
+        padding: '1em',
+        width: 'calc(344px - 2em)',
     }
     return(
         <p style={TextStyles}>

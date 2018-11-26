@@ -31,11 +31,11 @@ function ProfileHeader() {
             marginRight: '8em'
         },
         container: {
-            width: '22em',
+            width: '100%',
         },
         rowBot: {
             border: '2px solid gray',
-            height: '5.5em',
+            height: '150px',
             marginTop: '-2px'
         }
     }

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 function TweetSearch(props) {
     const TweetSearchStyles = {
         form: {
+            width: '100%',
             backgroundColor: '#B0E0E6',
             marginRight: '0px'
         },

@@ -5,14 +5,17 @@ import filledHeart from '../img/icons8-heart-filled-50.png';
 
 const TweetStyles = {
     box: {
+        width: '100%',
         borderBottom: '2px solid gray',
         height: '12em',
     },
     images: {
         height: '80px',
         display: 'inline-block',
-        marginTop: '-60px',
-        marginLeft: '0.5em'
+        marginTop: '-10px',
+        marginLeft: '0.5em',
+        paddingTop: '-1em',
+        paddingBottom: '-1em',
     },
     name: {
         float: 'right',
@@ -37,10 +40,10 @@ class Tweet extends React.Component {
    render() {
        let currentLikeStatus = null;
        if (!this.state.isLiked) {
-           currentLikeStatus = <img onClick={this.handleLike} src={emptyHeart} className="heartIcon" style={{width: '30%'}}/>
+           currentLikeStatus = <img onClick={this.handleLike} src={emptyHeart} className="heartIcon" style={{width: '20px', marginLeft:'0.5em'}}/>
        }
        else {
-        currentLikeStatus = <img onClick={this.handleLike} src={filledHeart} className="heartIcon" style={{width: '30%'}}/>
+        currentLikeStatus = <img onClick={this.handleLike} src={filledHeart} className="heartIcon" style={{width: '20px',marginLeft:'0.5em'}}/>
        }
     return (
         <table style={TweetStyles.box}>
@@ -51,11 +54,10 @@ class Tweet extends React.Component {
                 <td style={TweetStyles.name}>
                     <h4>{this.props.name}</h4>
                     <p>{this.props.description}</p>
+                    {currentLikeStatus}
                 </td>
             </tr>
-            <tr>
-                {currentLikeStatus}
-            </tr>
+           
         </table>
     );
 }
